@@ -53,7 +53,6 @@ messageForm.addEventListener('submit', (event) => {
   removeButton.type = 'button';
   newMessage.appendChild(removeButton);
 
-  // I put click event handler inside submit event handler I am not sure if this a good Practice or not
   removeButton.addEventListener('click', (e) => {
     const entry = removeButton.parentNode;
     entry.remove();
